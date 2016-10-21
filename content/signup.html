@@ -1,0 +1,26 @@
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="nerdluv.css">
+	</head>
+	
+	<body>
+		<form method ="POST" action ="signup-submit.php" enctype="multipart/form-data">
+			<fieldset class="column">
+				<legend>New User Signup:</legend>
+				<strong>Name: </strong><input name="name" type="text" size="15"><br>
+				<strong>Gender: </strong><input type="radio" name="gender" value="M" checked="true"> Male <input type="radio" name="gender" value="F"> Female<br>
+				<strong>Age:	</strong><input name="age" type="text" size="10"><br>
+				<strong>Personality type: </strong><input name="ptype" type="text" size="10"> (<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp"> Don't know your type? </a> ) <br>
+				<strong>Favorite OS:</strong>
+				<select name="os">
+					<option value="Windows" selected="true"> Windows </option>
+					<option value="MAC OS X"> MAC OS X </option>
+					<option value="Linux"> Linux </option>
+				</select><br>
+				<strong>Seeking Age: </strong> <input type="text" name="min" placeholder="min" size="7"> to <input type="text" placeholder="max" name="max" size="7"><br>
+				<strong>Image Upload: </strong> <input type='file' name='file'/> <br>
+				<strong> <input type="submit" value="Sign Up"></strong> 
+			</fieldset>
+		</form>
+	</body>
+</html>
